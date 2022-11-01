@@ -14,7 +14,7 @@ def get_data():
 def telegram_bot(token):
     bot = telebot.TeleBot(token)
 
-    @bot.message_handlers(commands=['start'])
+    @bot.message_handler(commands=['start'])
     def start_message(message):
         bot.send_message(message.chat.id, "Hi, dude! Write the 'price' to find out the cost of BTC!")
 
