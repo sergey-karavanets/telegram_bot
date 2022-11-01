@@ -18,6 +18,7 @@ def telegram_bot(token):
     def start_message(message):
         bot.send_message(message.chat.id, "Hi, dude! Write the 'price' to find out the cost of BTC!")
 
+    bot.polling()
 
 if __name__ == '__main__':
     get_data()
