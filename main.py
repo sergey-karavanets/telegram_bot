@@ -12,6 +12,7 @@ def get_data():
 
 
 def telegram_bot():
+    bot = telebot.TeleBot(token)
 
 
 if __name__ == '__main__':
