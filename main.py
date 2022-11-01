@@ -20,3 +20,4 @@ def telegram_bot(token):
 
 if __name__ == '__main__':
     get_data()
+    telegram_bot(token)
