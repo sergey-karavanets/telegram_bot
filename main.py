@@ -14,6 +14,7 @@ def get_data():
 def telegram_bot(token):
     bot = telebot.TeleBot(token)
 
+    @bot.message_handlers(commands=['start'])
     def start_message():
 
 
