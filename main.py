@@ -1,6 +1,7 @@
 import requests
 from datetime import datetime
 import telebot
+from auth_data import token
 
 
 def get_data():
