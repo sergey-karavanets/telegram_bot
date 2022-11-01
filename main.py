@@ -14,6 +14,8 @@ def get_data():
 def telegram_bot():
     bot = telebot.TeleBot(token)
 
+    def start_message():
+
 
 if __name__ == '__main__':
     get_data()
