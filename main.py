@@ -10,5 +10,9 @@ def get_data():
     sell_price = response['btc_usd']['sell']
     print(f'{datetime.now().strftime("%Y-%m-%d %H:%M")}\nSell BTC price: {sell_price}')
 
+
+def telegram_bot():
+
+
 if __name__ == '__main__':
     get_data()
