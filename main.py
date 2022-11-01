@@ -11,7 +11,7 @@ def get_data():
     print(f'{datetime.now().strftime("%Y-%m-%d %H:%M")}\nSell BTC price: {sell_price}')
 
 
-def telegram_bot():
+def telegram_bot(token):
     bot = telebot.TeleBot(token)
 
     def start_message():
