@@ -22,13 +22,16 @@ def telegram_bot(token):
 
     def send_text(message):
         if message.text.lower() == 'price':
-            req = requests.get('https://yobit.net/api/3/ticker/btc_usd')
-            response = req.json()
-            sell_price = response['btc_usd']['sell']
-            bot.send_message(
-                message.chat.id,
-                f'{datetime.now().strftime("%Y-%m-%d %H:%M")}\nSell BTC price: {sell_price}'
-            )
+            try:
+                req = requests.get('https://yobit.net/api/3/ticker/btc_usd')
+                response = req.json()
+                sell_price = response['btc_usd']['sell']
+                bot.send_message(
+                    message.chat.id,
+                    f'{datetime.now().strftime("%Y-%m-%d %H:%M")}\nSell BTC price: {sell_price}'
+                )
+            except Exception as ex:
+                print(ex)
 
 
 if __name__ == '__main__':
