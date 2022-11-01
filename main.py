@@ -20,6 +20,9 @@ def telegram_bot(token):
 
     bot.polling()
 
+    def send_text(message):
+
+
 if __name__ == '__main__':
     get_data()
     telegram_bot(token)
