@@ -32,6 +32,10 @@ def telegram_bot(token):
                 )
             except Exception as ex:
                 print(ex)
+                bot.send_message(
+                    message.chat.id,
+                    'Damp... Something was wrong...'
+                )
 
 
 if __name__ == '__main__':
