@@ -20,6 +20,7 @@ def telegram_bot(token):
 
     bot.polling()
 
+    @bot.message_handler(content_types=['text'])
     def send_text(message):
         if message.text.lower() == 'price':
             try:
