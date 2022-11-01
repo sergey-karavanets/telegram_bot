@@ -36,6 +36,8 @@ def telegram_bot(token):
                     message.chat.id,
                     'Damp... Something was wrong...'
                 )
+        else:
+            bot.send_message(message.chat.id, 'Whaaat??? Check the command dude!')
 
 
 if __name__ == '__main__':
