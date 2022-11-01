@@ -16,6 +16,7 @@ def telegram_bot(token):
 
     @bot.message_handlers(commands=['start'])
     def start_message(message):
+        bot.send_message(message.chat.id, "Hi, dude! Write the 'price' to find out the cost of BTC!")
 
 
 if __name__ == '__main__':
