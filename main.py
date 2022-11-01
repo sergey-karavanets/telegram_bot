@@ -15,7 +15,7 @@ def telegram_bot(token):
     bot = telebot.TeleBot(token)
 
     @bot.message_handlers(commands=['start'])
-    def start_message():
+    def start_message(message):
 
 
 if __name__ == '__main__':
